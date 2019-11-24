@@ -1,0 +1,44 @@
+<div class="topnav">
+    <img class="imgnav" src="res/img/OVG_logo2.png" alt="Logo OVG" title="Logo On Va Geeker" />
+    <a href="http://localhost:8080/JavaEE-Login/home">Accueil</a>
+    <a href="http://localhost:8080/JavaEE-Login/login">Connexion</a>
+    <a class="active" href="http://localhost:8080/JavaEE-Login/register">Inscription</a>
+    <div class="search-container">
+        <form class="loupe" action="">
+            <input type="text" placeholder="Rechercher.." name="search">
+            <button type="submit"><i class="fa fa-search buttonlou"></i></button>
+        </form>
+    </div>
+    <!-- <img class="imgmess" src="img/message.png" alt="Icone Message" title="Messages" /> -->
+    <div class="dropdown">
+            <img class="imgmess2" src="res/img/message.png" alt="Icone Message" title="Messages"/>
+            <div class="dropdown-content">
+              <a href="">Welcome</a>
+              <a href="">Message #1</a>
+              <a href="">Message #2</a>
+            </div>
+    </div> 
+    <!-- <img class="imgnotif" src="img/notification.png" alt="Icone Notification" title="Notifications" /> -->
+    <div class="dropdown">
+            <img class="imgnotif2" src="res/img/notification.png" alt="Icone Notification" title="Notifications"/>
+            <div class="dropdown-content">
+              <a href="">Welcome #1</a>
+              <a href="">Notification #2</a>
+              <a href="">Notification #3</a>
+            </div>
+    </div> 
+    <!-- <img class="imgavatar" src="img/avatar.png" alt="Icone avatar" title="Profil Utilisateur" /> -->
+    <div class="dropdown">
+            <img class="imgavatar2" src="res/img/avatar.png" alt="Icone avatar" title="Profil Utilisateur"/>
+            <span class="pseudo">
+                <% if (session.getAttribute("username") != null) { %>
+                <%= session.getAttribute("username")%>
+                <% } %>
+              </span>
+            <div class="dropdown-content">
+              <a href="#">Liste d'Amis</a>
+              <a href="#">Pr&eacuter&eacutefences</a>
+              <a href="http://localhost:8080/JavaEE-Login/logout">Deconnexion</a>
+            </div>
+    </div>
+</div>

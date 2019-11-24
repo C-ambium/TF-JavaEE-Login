@@ -1,0 +1,325 @@
+@font-face {
+  font-family: 'droid_sansregular';
+  src: url('fonts/DroidSans-webfont.eot');
+  src: url('fonts/DroidSans-webfont.eot?#iefix')
+    format('embedded-opentype'), url('fonts/DroidSans-webfont.woff')
+    format('woff'), url('fonts/DroidSans-webfont.ttf') format('truetype'),
+    url('fonts/DroidSans-webfont.svg#droid_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: url('../../res/img/back.jpg') no-repeat center !important;
+}
+
+h1 {
+  font-family: 'droid_sansregular', Verdana, Geneva, Tahoma, sans-serif !important;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.1em !important;
+  font-family: 'droid_sansregular', Verdana, Geneva, Tahoma, sans-serif !important;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'droid_sansregular', Verdana, Geneva, Tahoma, sans-serif !important;
+  font-size: 1.5em !important;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 0.5em;
+  width: 100%;
+  padding-top: 2rem;
+  margin-top: 5rem;
+  background-color: rgba(245, 245, 245, 0.3);
+}
+
+footer .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+footer .img:hover {
+  width: 40%;
+}
+
+input[type="submit"] {
+  background-color: rgba(245, 245, 245, 0.3);
+  font-weight: bold;
+  display: block;
+  margin : auto;
+}
+
+/* TABLES */
+#users {
+  background-color: rgba(243, 182, 131, 0.7)!important;
+}
+
+table tr:nth-child(even){
+  background-color: rgba(243, 128, 33, 0.6) !important;
+}
+
+.usercard {
+  margin: auto!important;
+  width: 800px!important;
+  margin-right: 8rem !important;
+  margin-left: 8rem !important;
+  padding-top: 20px !important;
+  text-align: center !important;
+}
+
+.view, .edit {
+display: flex;
+justify-content: center; 
+}
+
+th {
+  background-color: rgba(243, 128, 33, 0.6) !important;
+  text-align: center !important;
+
+}
+
+td {
+  vertical-align: middle!important;
+}
+
+/* table, td, th {
+  border: 1px solid #333;
+  padding: 15px;
+}
+
+thead, tfoot {
+  background-color: rgb(243, 128, 33);
+  color: #fff;
+  text-align: center;
+}
+*/
+
+/* ERRORS */
+.error {
+  color : red;
+  font-weight: bold;
+}
+
+/* HEADER Top Nav */
+header .imgnav {
+  float: left;
+  width: 10%;
+  height: 10%;
+  padding-right: 0.8rem;
+  margin-right: 7rem;
+}
+
+.topnav {
+  /*  overflow: hidden; */
+  background-color: rgba(233, 233, 233, 0.3)!important;
+  padding: 0.4rem !important;
+  display: inline-flex !important;
+  z-index: -1000 !important;
+}
+
+.topnav a {
+  float: left !important;
+  display: block !important;
+  color: black !important;
+  text-align: center !important;
+  padding: 14px 16px !important;
+  text-decoration: none !important;
+  font-size: 17px !important;
+}
+
+.topnav a:hover {
+  background-color: rgba(233, 233, 233, 0.4) !important;
+  color: black !important;
+}
+
+.topnav a.active {
+  background-color: rgb(243, 128, 33) !important;
+  color: white !important;
+}
+
+.topnav .search-container {
+  float: none !important;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-left: 50px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  display: flex !important;
+  flex-direction: row !important;
+  padding: 6px 20px !important;
+  margin-top: 0.4rem !important;
+  margin-right: 16px !important;
+  background: rgba(233, 233, 233, 0) !important;
+  font-size: 17px !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.loupe {
+  display: flex;
+}
+
+.buttonlou {
+  margin: auto;
+}
+
+.topnav .search-container button:hover {
+  background: rgb(243, 128, 33) !important;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none !important;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none !important;
+    display: flex !important;
+    text-align: left !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 14px !important;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+/* IMG Top Nav */
+.imgmess, .imgnotif, .imgavatar {
+  width: 3.5%;
+  height: 3.5%;
+  display: inline-flex;
+  margin-inline-start: 3rem;
+  margin-inline-end: 1rem;
+  margin-top: 0.4rem;
+}
+
+.imgmess2, .imgnotif2, .imgavatar2 {
+  width: 40px;
+  display: inline-flex;
+  margin-inline-start: 2rem;
+  margin-inline-end: 4rem;
+  margin-top: 0.4rem;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(249, 249, 249, 0.5);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 99999;
+  transition: visibility 0s, opacity 0.5s linear;
+  opacity: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(243, 128, 33);
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .imgnotif2 {
+  background-color: rgba(243, 123, 26, 0.2);
+}
+
+/* LOGIN */
+.agecheck {
+  font-size : 0.6em;
+  line-height: 4pt !important;
+}
+
+.log {
+  background-color: rgba(255, 245, 224, 0.5);
+  border: 3px #ffbb29 groove;
+  border-radius: 20px;
+  width: 400px;
+  padding: 12px;
+  padding-bottom: 42px;
+  margin: auto;
+  margin-block-start: 2rem;
+  text-align: center;
+}
+
+.loginput {
+  width: 200px;
+  margin: auto;
+  display: block;
+  padding: 12px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.buttonlog {
+  width: 100%;
+}
+
+/* Cards */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 10px auto;
+  position: relative;
+  text-align: center;
+}
+
+.card {
+  display: inline-block !important;
+  border-style: none !important;
+  border-radius: 20px !important;
+  box-shadow: 0 0 5px #aaa;
+  margin: 20px auto;
+  width: 250px !important;
+}
+
+.card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>UserLogin</servlet-name>
+    <jsp-file>/META-INF/jsps/login.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>home</servlet-name>
+    <jsp-file>/META-INF/jsps/HomeUser.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>register</servlet-name>
+    <jsp-file>/META-INF/jsps/register.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>edit</servlet-name>
+    <jsp-file>/META-INF/jsps/UserCardEdit.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>usercard</servlet-name>
+    <jsp-file>/META-INF/jsps/UserCard.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <jsp-file>/META-INF/jsps/logout.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>/res/* </url-pattern>
+  </servlet-mapping>
+</web-app>

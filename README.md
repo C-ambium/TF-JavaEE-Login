@@ -2,6 +2,8 @@
 
 Login service test projet.
 
+**You must exclude Filter from build until fix**
+
 **Todo**
 * Fix edit mode
 * Implement Cookies
